@@ -1,0 +1,25 @@
+[versions]
+jvm = "21"
+kotlin = "2.0.0"
+kotlinx = "1.8.1"
+springDependencyManagement = "1.1.6"
+swaggerGradlePlugin = "2.2.22"
+
+[libraries]
+springBootStarterWeb = { group = "org.springframework.boot", name = "spring-boot-starter-web" }
+kotlinReflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect" }
+kotlinStdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk8" }
+springdocOpenapiUi = { group = "org.springdoc", name = "springdoc-openapi-starter-webmvc-ui", version = "2.0.3" }
+lombok = { group = "org.projectlombok", name = "lombok" }
+springBootDevtools = { group = "org.springframework.boot", name = "spring-boot-devtools" }
+springBootConfigurationProcessor = { group = "org.springframework.boot", name = "spring-boot-configuration-processor" }
+springBootStarterTest = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
+kotlinTestJunit5 = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit5" }
+junitPlatformLauncher = { group = "org.junit.platform", name = "junit-platform-launcher" }
+
+[plugins]
+springBoot = { id = "org.springframework.boot", version.ref = "springBoot" }
+springDependencyManagement = { id = "io.spring.dependency-management", version.ref = "springDependencyManagement" }
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlinSpring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+swaggerGradlePlugin = { id = "io.swagger.core.v3.swagger-gradle-plugin", version.ref = "swaggerGradlePlugin" }
